@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallpaper"
+        app:layout_constraintTop_toTopOf="@id/main"
+        />
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/star"
+        app:layout_constraintTop_toBottomOf="@id/wallpaper"
+        app:layout_constraintRight_toRightOf="@id/wallpaper"
+        android:layout_marginTop="-15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/wallpaper"
+        app:layout_constraintLeft_toLeftOf="@id/main"
+        android:text="Ya Hallo"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="User"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="@id/main"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        app:layout_constraintTop_toBottomOf="@id/user"
+        app:layout_constraintLeft_toLeftOf="@id/main"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/input1"
+        android:text="Huynh Gia Bao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/user"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <EditText
+        android:id="@+id/input2"
+        android:text="21520604"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/password"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintLeft_toLeftOf="@id/main"
+        android:layout_marginTop="25dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus sapien magna, nec pharetra lorem tempus vitae. Pellentesque vestibulum sapien non tortor viverra dignissim. Fusce scelerisque sem sit amet nunc tincidunt interdum. Vestibulum varius tortor et nibh malesuada scelerisque. Maecenas pharetra vitae velit at tincidunt. Vivamus rutrum metus ex, eu luctus ipsum ornare non. Maecenas non euismod metus. Vestibulum a porta ante. Mauris cursus eu ante a tristique. Aenean dapibus hendrerit ultrices. Proin tempus lorem ac dolor vulputate, quis laoreet justo aliquet. Aenean cursus justo at tortor dictum condimentum."
+        android:padding="10dp"
+        />
+
+    <Button
+        android:id="@+id/log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/main"
+        app:layout_constraintRight_toRightOf="@id/main"
+        android:layout_margin="5dp"
+        android:text="Login"
+        />
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/main"
+        app:layout_constraintRight_toLeftOf="@id/log_in"
+        android:layout_margin="5dp"
+        android:text="Sign up"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
